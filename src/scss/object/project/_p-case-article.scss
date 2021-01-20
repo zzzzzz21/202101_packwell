@@ -1,0 +1,42 @@
+.p-case-article-head {
+    background: $base-yellow;
+    padding: 12px 10px 18px;
+}
+
+.p-case-article-head__container {
+    max-width: $pc-max-width;
+    margin: 0 auto;
+}
+
+.p-case-article-head__name {
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.p-case-article-head__honor {
+    font-size: .8em;
+    margin: 0 0 0 6px;
+}
+
+.p-case-article-head__detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+}
+
+.p-case-article-head__dl {
+    align-items: center;
+    display: flex;
+}
+
+.p-case-article-haed__dd {
+    letter-spacing: 0;
+    margin: 0 0 0 7px;
+
+    &--brand {
+        line-height: 1;
+        font-size: 28px;
+        white-space: nowrap;
+    }
+}

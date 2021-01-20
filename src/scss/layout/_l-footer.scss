@@ -1,0 +1,43 @@
+.l-footer {
+  margin: 68px 0 0;
+}
+
+.l-footer-pagetop {
+  text-align: center;
+}
+
+.l-footer-content {
+  border-top: 1px solid $base-blue;
+  margin: 10px 0 0;
+  padding: 7px 10px;
+}
+
+.l-footer-content__container {
+  align-items: center;
+  color: $footer-text-color;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $pc-max-width;
+}
+
+.l-footer-content__title {
+
+  &:hover,
+  &:focus {
+    color: $base-blue;
+  }
+}
+
+.l-footer-copy {
+  background: $base-blue;
+  color: $base-white-taxt-color;
+  padding: 15px 10px;
+}
+
+.l-footer-copy__text {
+  font-size: 10px;
+  margin: 0 auto;
+  max-width: $pc-max-width;
+}

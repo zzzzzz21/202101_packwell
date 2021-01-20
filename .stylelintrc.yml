@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "indentation": 2, # スペースは2
+    "string-quotes": "double", # シングルクォーテーションは禁止
+    "selector-no-qualifying-type": true, # セレクタとクラスを結合させるのは禁止
+    "declaration-block-trailing-semicolon": "always", # スタイル末尾のセミコロンは必須
+    "property-no-vendor-prefix": true, # ベンダープレフィックスは不要
+    "at-rule-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "number-leading-zero": "never", # 数値が1未満の場合、先頭のゼロは省略,
+    "font-weight-notation": "named-where-possible", # font-weightは数値入力禁止
+    "rule-empty-line-before": "always-multi-line", ## クラスごとにスペースをつける
+    "selector-pseudo-element-colon-notation": "double", ##擬似要素のセミコロンは2つ
+    "scss/at-rule-no-unknown": true, # 
+    "order/properties-alphabetical-order": true,
+    "prettier/prettier": true,
+  }
+}

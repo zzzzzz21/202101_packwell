@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $BASE_FONT_SIZE;
+}
+
+body {
+  color: $base-black-taxt-color;
+  // font-family: $base-font-family;
+  font-family: "AXIS Std R";
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.85;
+  letter-spacing: .05em;
+  -webkit-overflow-scrolling: touch;
+  text-size-adjust: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  outline: none;
+  text-decoration: none;
+  transition: all ease .3s;
+
+  & *,
+  &::before,
+  &::after {
+    transition: all ease .3s;
+  }
+}
+
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+button,
+input[type="submit"] {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all ease .3s;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+em,
+address {
+  font-style: normal;
+}

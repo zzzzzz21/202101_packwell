@@ -1,0 +1,22 @@
+.c-navi__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.c-navi__item {
+    &:nth-of-type(n+2) {
+        &::before {
+            content: "|"
+        }
+    }
+}
+
+.c-navi__link {
+    padding: 0 10px;
+
+    &:hover,
+    &:focus {
+        color: $base-blue;
+    }
+}

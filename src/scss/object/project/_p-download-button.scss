@@ -1,0 +1,20 @@
+.p-download-button {
+    align-items: center;
+    background: $base-blue;
+    border-radius: 8px;
+    color: $base-white-taxt-color;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .09em;
+    justify-content: center;
+    margin: 65px auto 0;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+        background: $download-button-background-hover;
+    }
+}

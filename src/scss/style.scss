@@ -1,0 +1,34 @@
+// ********************************************************************************************
+//
+// style.scss
+//
+// ********************************************************************************************
+@charset "utf-8";
+
+// Foundation
+// -------------------------------------------------------------------
+@import "foundation/reset";
+@import "foundation/color";
+@import "foundation/variables";
+@import "foundation/base";
+@import "foundation/mixin";
+
+// Layout
+// -------------------------------------------------------------------
+@import "layout/**";
+
+// object
+// -------------------------------------------------------------------
+
+// object/component
+@import "object/component/**";
+
+// object/project
+@import "object/project/**";
+
+// object/utility
+@import "object/utility/**";
+
+// Page
+// -------------------------------------------------------------------
+@import "pages/**";

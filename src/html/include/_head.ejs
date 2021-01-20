@@ -1,0 +1,38 @@
+<% 
+var d = jsonData; 
+var domain = 'http://www.pacwell.co.jp/';
+var commonTitle = '#TODO';
+var commonDescription = '#TODO'
+-%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1100">
+	<% if (d.ogtype) { -%>
+		<meta property="og:type" content="<%- d.ogtype %>">
+	<% } else { -%>
+		<meta property="og:type" content="article">
+	<% } -%>
+	<title><% if (d.title) { -%><%- d.title %>｜<% } -%><%- commonTitle %></title>
+	<meta property="og:title" content="<% if (d.title) { -%><%- d.title %>｜<% } -%><%- commonTitle %>">
+	<% if (d.name === 'index') { -%>
+		<meta property="og:url" content="<%- domain %><%- d.url %>">
+	<% } else { -%>
+		<meta property="og:url" content="<%- domain %><%- d.url %>/<%- d.name %>.html">
+	<% } -%>
+	<meta name="description" content="<% if (d.description) { -%><%- d.description %>、<% } -%><%- commonDescription %>">
+	<meta property="og:description" content="<% if (d.description) { -%><%- d.description %>、<% } -%><%- commonDescription %>">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="">
+	<link rel="stylesheet" href="<%- d.path %>css/style.css">
+	<!-- GTM -->
+	<!-- // GTM-->
+</head>
+<body>
+<!-- GTM -->
+<!-- // GTM-->
+<!-- SVG-->
+<%- include('./_svg') %>
+<!-- // SVG-->
+<div class="l-wrapper" id="js-scroll-top">

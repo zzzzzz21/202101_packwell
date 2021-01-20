@@ -1,0 +1,59 @@
+.p-common-banner {
+    display: block;
+    background: $base-pink;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 27px 5px 5px;
+
+    &:focus,
+    &:hover {
+        background: $common-banner-background-hover;
+    }
+}
+
+.p-common-banner__lead {
+    @include getTriangle($base-white, right, 10, 12);
+    color: $base-white-taxt-color;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: .09em;
+    padding: 5px 70px;
+    position: relative;
+    text-align: center;
+
+
+    &::before {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+    }
+}
+
+.p-common-banner__icon {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: -6px;
+}
+
+.p-common-banner__content {
+    align-items: center;
+    background: $base-white;
+    border-radius: 5px;
+    color: $common-banner-gray-text;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    padding: 2.5px;
+}
+
+.p-common-banner__text {
+    letter-spacing: .1em;
+}
+
+.p-common-banner__strong {
+    font-size: 1.2em;
+}

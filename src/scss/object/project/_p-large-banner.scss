@@ -1,0 +1,97 @@
+.p-large-banner {
+    display: block;
+    background: $base-pink;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: $pc-max-width;
+    padding: 50px 5px 5px;
+}
+
+.p-large-banner__lead {
+    color: $base-white-taxt-color;
+    font-size: 35px;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+
+.p-large-banner__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 6px 0 0;
+}
+
+.p-large-banner__catch {
+    color: $base-white-taxt-color;
+    font-size: 85px;
+    letter-spacing: .1em;
+    line-height: 1.2;
+}
+
+.p-large-banner__circle {
+    align-items: center;
+    background: $base-yellow;
+    border-radius: 50%;
+    color: $base-pink;
+    display: flex;
+    font-size: 50px;
+    height: 250px;
+    justify-content: center;
+    width: 250px;
+}
+
+.p-large-banner__link {
+    @include getTriangle($base-pink, right, 10, 12);
+    align-items: center;
+    background: $base-white;
+    border-radius: 5px;
+    color: $large-banner-gray-text;
+    display: flex;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: .09em;
+    justify-content: center;
+    margin: 43px 0 0;
+    padding: 5px 10px 5px 83px;
+    text-align: center;
+
+    &::before {
+        position: static;
+        order: 3;
+        margin: 0;
+    }
+
+    &:focus,
+    &:hover {
+        background: $base-blue;
+        color: $base-white-taxt-color;
+
+        &::before {
+            border-color: transparent transparent transparent $base-white;
+        }
+
+        .p-large-banner__icon {
+            fill: $base-white;
+            stroke: $base-white;
+        }
+    }
+}
+
+.p-large-banner__icon {
+    bottom: 0;
+    fill: $base-white;
+    opacity: .8;
+    margin: 0 18px 0 0;
+    stroke: #767878;
+    stroke-miterlimit: 10;
+    stroke-width: 1;
+}
+
+.p-large-banner__text {
+    letter-spacing: .1em;
+}
+
+.p-large-banner__strong {
+    font-size: 1.2em;
+}

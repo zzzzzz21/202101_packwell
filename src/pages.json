@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "url":"/",
+      "name": "index",
+      "ogtype": "website",
+      "ogurl": "/",
+      "contents": "contents/_index",
+      "path": "./"
+    }
+  ]
+}

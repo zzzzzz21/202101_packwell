@@ -1,0 +1,11 @@
+.c-tag {
+    align-items: center;
+    background: $base-blue;
+    color: $base-white-taxt-color;
+    display: inline-flex;
+    min-height: 30px;
+    min-width: 90px;
+    padding: 0 5px;
+    justify-content: center;
+    white-space: nowrap;
+}
