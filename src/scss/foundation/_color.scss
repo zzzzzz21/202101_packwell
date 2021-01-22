@@ -1,17 +1,18 @@
 // palette
 $palette-000: #000;
-$palette-FFF: #fff;
 $palette-0A387B: #0a387b;
-$palette-787878: #787878;
-$palette-E1DBD6: #e1dbd6;
-$palette-998675: #998675;
-$palette-FF3366: #f36;
-$palette-FF99B2: #FF99B2;
+$palette-646464: #646464;
 $palette-767878: #767878;
 $palette-777878: #777878;
 $palette-787878: #787878;
-$palette-F2E10A: #F2E10A;
+$palette-998675: #998675;
 $palette-B9C6E1: #B9C6E1;
+$palette-E1DBD6: #e1dbd6;
+$palette-F2E10A: #F2E10A;
+$palette-FF3366: #f36;
+$palette-F5F5F0: #F5F5F0;
+$palette-FF99B2: #FF99B2;
+$palette-FFF: #fff;
 
 $base-white: $palette-FFF;
 $base-black: $palette-000;
@@ -34,5 +35,9 @@ $pagetopbutton-triangle-color: $palette-E1DBD6;
 $pagetopbutton-text-color: $palette-998675;
 
 $large-mail-icon-color: $palette-767878;
+
+
+$case-article-headline-color: $palette-646464;
+$case-article-background: $palette-F5F5F0;
 
 $footer-text-color: $palette-787878;

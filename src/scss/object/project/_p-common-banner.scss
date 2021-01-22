@@ -16,12 +16,9 @@
     @include getTriangle($base-white, right, 10, 12);
     color: $base-white-taxt-color;
     font-size: 21px;
-    font-weight: bold;
-    letter-spacing: .09em;
-    padding: 5px 70px;
-    position: relative;
+    letter-spacing: .06em;
+    padding: 5px 80px;
     text-align: center;
-
 
     &::before {
         top: 0;

@@ -10,15 +10,15 @@ html {
 
 body {
   color: $base-black-taxt-color;
-  // font-family: $base-font-family;
-  font-family: "AXIS Std R";
+  font-family: $base-font-family;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.85;
-  letter-spacing: .05em;
+  line-height: 1.9;
+  letter-spacing: .045em;
   -webkit-overflow-scrolling: touch;
   text-size-adjust: 100%;
   width: 100%;
+  min-width: 980px;
 }
 
 a {
