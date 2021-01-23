@@ -1,16 +1,89 @@
 <% 
-var d = jsonData; 
+var d = jsonData;
+var domain = 'http://www.pacwell.co.jp/';
 -%>
-<a href="http://www.pacwell.co.jp/contact.html" class="p-common-banner">
-    <div class="p-common-banner__lead">
-        お問い合わせ・無償デモのお申し込みは今すぐ！
-        <svg class="p-common-banner__icon" aria-label="お問い合わせ" width="40" height="40" role="img"><use xlink:href="#svg-mail" /></svg>
+<section class="l-wrapper">
+    <div class="p-kv">
+        <h1 class="p-kv__title"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機"></h1>
     </div>
-    <div class="p-common-banner__content">
-        <span class="p-common-banner__text">お電話でのお問い合わせ</span>
-        <strong class="p-common-banner__strong">TEL：048-711-3789</strong>
+    <section class="p-top-main">
+        <h2 class="p-top-main__title">お困りごとはありませんか？</h2>
+        <div class="p-top-checklist">
+            <div class="p-top-checklist__detail">
+                <ul class="p-top-checklist__list">
+                    <li class="p-top-checklist__item">環境に配慮した包装資材を使いたい</li>
+                    <li class="p-top-checklist__item">脱プラを推進したいが作業性も良くしたい</li>
+                    <li class="p-top-checklist__item">多品種少量生産の重量物のため梱包に手間取っている</li>
+                    <li class="p-top-checklist__item">今の梱包方法に満足できてない</li>
+                </ul>
+                <div class="p-top-checklist__illust">
+                    <img src="<%- d.path %>images/illust01.svg" alt="" width="208" height="306">
+                </div>
+            </div>
+        </div>
+        <div class="p-top-introduction">
+            <div class="p-top-introduction-kv">
+                <p class="p-top-introduction-kv__text">パックウェルに<br>お任せください！</p>
+                <div class="p-top-introduction-kv__image" role="img" aria-label="イメージ"></div>
+            </div>
+            <div class="p-top-introduction-illust">
+                <img src="<%- d.path %>images/illust02.svg" alt="" width="294" height="300">
+            </div>
+        </div>
+    </section>
+    <section class="p-top-product">
+        <h2 class="p-top-product-title">
+            <span class="p-top-product-title__text">パックウェルのオススメ<br>「紙緩衝材」製造機</span>
+        </h2>
+        <section class="p-top-product-content">
+            <h3 class="p-top-product-content__title">紙緩衝材の進化系</h3>
+            <div class="p-top-ptoduct-content__brand">
+                <img src="<%- d.path %>images/brand01.svg" alt="NUEVOPAK ヌエボパック" width="592" height="199">
+            </div>
+            <p class="p-top-product-content__lead">
+                国際的な目標「SDGs」が世界の潮流となり、レジ袋の有料化など廃プラスチックの環境問題も身近になった昨今。物流業界にも、「脱プラ」の機運が高まっています。<br>
+                中でもリサイクル可能で環境に優しい紙の緩衝材は多彩な用途に使われています。<br>
+                さまざまな紙緩衝材を即座に製造するＮＵＥＶＯＰＡＫは、時代のニーズに応えます。
+            </p>
+            <div class="p-top-product-type">
+                <%- include('../include/parts/_p-product-type') %>
+            </div>
+        </section>
+    </section>
+    <section class="p-top-about">
+        <h2 class="p-top-about-title c-large-tag">紙緩衝材の形状について</h2>
+        <div class="p-top-about-block">
+            <dl class="p-top-about-block__dl">
+                <dt class="p-top-about-block__dt"><img src="<%- d.path %>images/brand-type01.svg" alt="X-Pad+TM" width="238" height="45"></dt>
+                <dd class="p-top-about-block__dd">
+                    立体的なパッドタイプの緩衝材は緩衝性能が高く、<br>機械類などの重量物や突起のある製品に最適です。
+                </dd>
+            </dl>
+            <div class="p-top-about-block__illust">
+                <img src="<%- d.path %>images/illust03.svg" alt="" width="948" height="187">
+            </div>
+        </div>
+        <div class="p-top-about-block">
+            <dl class="p-top-about-block__dl">
+                <dt class="p-top-about-block__dt"><img src="<%- d.path %>images/brand-type02.svg" alt="X-FillTMA" width="214" height="44"></dt>
+                <dd class="p-top-about-block__dd">
+                    クラフト紙をクッション性のある紙緩衝材に加工。<br>梱包作業に欠かせない隙間埋めに最適です。
+                </dd>
+            </dl>
+            <div class="p-top-about-block__illust p-top-about-block__illust--mt">
+                <img src="<%- d.path %>images/illust04.svg" alt="" width="950" height="125">
+            </div>
+        </div>
+    </section>
+    <div class="p-top-banner">
+        <%- include('../include/parts/_p-large-banner') %>
+        <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button">
+            カタログはこちらからダウンロードできます
+            <svg class="p-download-button__icon" aria-label="ダウンロード" width="48" height="48" role="img"><use xlink:href="#svg-download" /></svg>
+        </a>
     </div>
-</a>
+</section>
+
 
 
 
@@ -27,10 +100,7 @@ var d = jsonData;
 </div>
 
 
-    <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button">
-        カタログはこちらからダウンロードできます
-        <svg class="p-download-button__icon" aria-label="ダウンロード" width="48" height="48" role="img"><use xlink:href="#svg-download" /></svg>
-    </a>
+
 
 <article class="p-case-article">
     <div class="p-case-article-head">

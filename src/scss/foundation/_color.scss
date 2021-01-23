@@ -5,8 +5,10 @@ $palette-646464: #646464;
 $palette-767878: #767878;
 $palette-777878: #777878;
 $palette-787878: #787878;
+$palette-828282: #828282;
 $palette-998675: #998675;
 $palette-B9C6E1: #B9C6E1;
+$palette-DCDCD7: #DCDCD7;
 $palette-E1DBD6: #e1dbd6;
 $palette-F2E10A: #F2E10A;
 $palette-FF3366: #f36;
@@ -20,10 +22,14 @@ $base-blue: $palette-0A387B;
 $base-pink: $palette-FF3366;
 $base-yellow: $palette-F2E10A;
 
+// テキストカラー
 $base-black-taxt-color: $palette-000;
 $base-white-taxt-color: $palette-FFF;
 
+// ボーダーカラー
+$base-gray-border: $palette-DCDCD7;
 
+// 共通バナー設定
 $common-banner-background-hover: $palette-FF99B2;
 $common-banner-gray-text: $palette-787878;
 
@@ -31,12 +37,17 @@ $large-banner-gray-text: $palette-777878;
 
 $download-button-background-hover: $palette-B9C6E1;
 
+// TOPに戻るボタン設定
 $pagetopbutton-triangle-color: $palette-E1DBD6;
 $pagetopbutton-text-color: $palette-998675;
+
 
 $large-mail-icon-color: $palette-767878;
 
 
+$product-type-link-background: $palette-828282;
+
+// 事例集設定
 $case-article-headline-color: $palette-646464;
 $case-article-background: $palette-F5F5F0;
 

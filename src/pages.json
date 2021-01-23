@@ -6,7 +6,8 @@
       "ogtype": "website",
       "ogurl": "/",
       "contents": "contents/_index",
-      "path": "./"
+      "path": "./",
+      "domain": "http://www.pacwell.co.jp/"
     }
   ]
 }

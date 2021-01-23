@@ -6,7 +6,6 @@
     display: flex;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: .09em;
     justify-content: center;
     margin: 65px auto 0;
     max-width: 500px;
@@ -17,4 +16,8 @@
     &:hover {
         background: $download-button-background-hover;
     }
+}
+
+.p-download-button__icon {
+    margin: 0 0 0 30px;
 }

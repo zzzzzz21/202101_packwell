@@ -1,8 +1,10 @@
 // Font
 $BASE_FONT_SIZE: 62.5%;
 
-$base-font-family: "AXIS Std R", "Helvetica Neue", arial,
-  "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+//$base-font-family: "AXIS Std R", "Helvetica Neue", arial,
+//  "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+
+$base-font-family: sans-serif;
 
 $font-mincho: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", yumincho, "Yu Mincho",
   sans-serif;
@@ -14,7 +16,7 @@ $font-weight-demibold: 600;
 $font-weight-bold: 700;
 
 // Image
-$IMG_PATH: "../../images/";
+$IMG_PATH: "../images/";
 
 $pc-header-width: 1100px;
 $pc-max-width: 980px;
