@@ -45,22 +45,21 @@
 
 .p-large-banner__link {
     @include getTriangle($base-pink, right, 10, 12);
-    align-items: center;
     background: $base-white;
     border-radius: 5px;
     color: $large-banner-gray-text;
-    display: flex;
+    display: block;
     font-size: 21px;
     font-weight: bold;
-    justify-content: center;
     margin: 43px 0 0;
-    padding: 5px 10px 5px 95px;
+    padding: 5px 220px;
     text-align: center;
 
     &::before {
-        position: static;
-        order: 3;
-        margin: 0;
+        bottom: 0;
+        position: absolute;
+        right: 160px;
+        top: 0;
     }
 
     &:focus,
@@ -83,8 +82,11 @@
     bottom: 0;
     fill: $base-white;
     opacity: .8;
-    margin: 0 18px 0 27px;
-    stroke: #767878;
+    margin: auto;
+    position: absolute;
+    right: 190px;
+    stroke: $large-banner-gray-icon;
     stroke-miterlimit: 10;
     stroke-width: 1;
+    top: 0;
 }
