@@ -8,3 +8,10 @@
   margin: 0 auto;
   max-width: $pc-max-width;
 }
+
+.l-header-title {
+  &:focus,
+  &:hover {
+    opacity: .7;
+  }
+}

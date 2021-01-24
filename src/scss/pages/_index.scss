@@ -7,6 +7,13 @@
     display: flex;
     height: 350px;
     justify-content: center;
+    padding: 0 10px;
+}
+
+.p-kv__title {
+    color: $base-white-taxt-color;
+    font-size: 57px;
+    text-shadow: 0 0 20px $base-blue;
 }
 
 .p-top-main {
@@ -90,6 +97,7 @@
     font-weight: bold;
     justify-content: center;
     line-height: 1.6;
+    padding: 0 10px;
 }
 
 .p-top-introduction-kv__image {
@@ -104,14 +112,16 @@
     font-size: 0;
     left: 0;
     margin: auto;
-    max-width: 980px;
+    max-width: 294px;
     position: absolute;
     right: 0;
     text-align: center;
+    width: 30%;
     z-index: 2;
 
     & img {
         max-width: 294px;
+        width: 100%;
     }
 }
 
@@ -211,7 +221,7 @@
 }
 
 .p-top-banner {
-    margin: 40px 0 0;
+    margin: 40px 10px 0;
 }
 
 .p-point {
@@ -450,5 +460,5 @@
 }
 
 .p-bottom-banner {
-    margin: 61px 0 0;
+    margin: 61px 10px 0;
 }

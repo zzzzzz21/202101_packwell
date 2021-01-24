@@ -11,10 +11,12 @@
 }
 
 .c-large-tag {
+    align-items: center;
     background: $base-blue;
     color: $base-white-taxt-color;
+    display: flex;
     font-size: 28px;
     line-height: 1.8;
     padding: 0 5px;
-    text-align: center;
+    justify-content: center;
 }
