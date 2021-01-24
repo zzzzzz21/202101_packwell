@@ -1,3 +1,9 @@
+.p-case-article {
+    & + & {
+        margin: 45px 0 0;
+    }
+}
+
 .p-case-article-head {
     background: rgba($base-yellow, .5);
     padding: 12px 10px 16px;
@@ -10,7 +16,6 @@
 
 .p-case-article-head__name {
     font-size: 25px;
-    letter-spacing: 0;
 }
 
 .p-case-article-head__honor {
@@ -30,18 +35,17 @@
 }
 
 .p-case-article-haed__dd {
-    letter-spacing: 0;
     margin: 0 0 0 7px;
 
     &--brand {
         line-height: 1;
         font-size: 28px;
+        font-weight: bold;
         white-space: nowrap;
     }
 }
 
 .p-case-article-body {
-    background: $case-article-background;
     padding: 20px 10px 0;
 }
 
@@ -68,10 +72,13 @@
     margin-top: 5px;
 }
 
+.p-case-article-detail__author {
+    margin: 20px 0 0;
+}
+
 .p-case-article-detail__headline {
     color: $case-article-headline-color;
     font-size: 21px;
-    letter-spacing: .055em;
 }
 
 .p-case-article-gallery {
@@ -81,8 +88,31 @@
     max-width: 386px;
     padding-left: 56px;
     position: relative;
+    width: 100%;
 }
 
 .p-case-article-gallery__item {
-    margin-top: 5px;
+    & + & {
+        margin: 5px 0 0;
+    }
+}
+
+.p-case-article-gallery__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+
+    &--medium {
+        height: 200px;
+    }
+
+    &--small {
+        height: 180px;
+    }
+}
+
+.p-case-article-gallery__text {
+    font-size: 14px;
 }

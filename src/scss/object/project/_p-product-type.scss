@@ -58,4 +58,9 @@
     font-weight: bold;
     padding: 5px;
     min-width: 245px;
+
+    &:focus,
+    &:hover {
+        background: $base-blue;
+    }
 }

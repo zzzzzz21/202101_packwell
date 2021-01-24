@@ -213,3 +213,84 @@
 .p-top-banner {
     margin: 40px 0 0;
 }
+
+.p-point {
+    margin: 69px 0 0;
+}
+
+.p-point-title {
+    background: $palette-F2E10A;
+}
+
+.p-point-title__text {
+    color: $base-blue;
+    display: block;
+    font-size: 26px;
+    max-width: $pc-max-width;
+    margin: 0 auto;
+    padding: 10px 10px 10px 70px;
+}
+
+.p-point-content {
+    background: $base-gray-background;
+    border-bottom: 2px solid $base-yellow;
+    margin: 15px 0 0;
+    padding: 35px 0 56px;
+}
+
+.p-point-content__list {
+    max-width: $pc-max-width;
+    margin: 0 auto;
+    padding: 0 10px 0 70px;
+}
+
+.p-point-content__item {
+    display: flex;
+    font-size: 26px;
+
+    & + & {
+        margin: 14px 0 0;
+    
+}
+    &::before {
+        background: $base-pink;
+        border-radius: 50%;
+        content:"";
+        height: 23px;
+        flex-basis: 23px;
+        margin: 15px 5px 0 0;
+        width: 23px;
+    }
+}
+
+.p-case {
+    background: $base-gray-background;
+}
+
+.p-case-head {
+    align-items: flex-end;
+    display: flex;
+    max-width: calc(#{$pc-max-width} + 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.p-case-head__title {
+    background: url(#{$IMG_PATH}case-title.svg) center top no-repeat; 
+    color: $base-blue;
+    flex-basis: 298px;
+    font-size: 30px;
+    height: 221px;
+    margin: -19px 0 0;
+    width: 298px;
+    padding: 108px 0 0 68px;
+}
+
+.p-case-head__text {
+    font-size: 18px;
+    margin: 0 0 38px;
+}
+
+.p-case-body {
+    margin: 22px 0 0;
+}

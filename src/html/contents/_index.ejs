@@ -54,7 +54,9 @@ var domain = 'http://www.pacwell.co.jp/';
         <h2 class="p-top-about-title c-large-tag">紙緩衝材の形状について</h2>
         <div class="p-top-about-block">
             <dl class="p-top-about-block__dl">
-                <dt class="p-top-about-block__dt"><img src="<%- d.path %>images/brand-type01.svg" alt="X-Pad+TM" width="238" height="45"></dt>
+                <dt class="p-top-about-block__dt">
+                    <svg aria-label="X-Pad+TM" width="238" height="45"><use xlink:href="#svg-brand-type01" /></svg>
+                </dt>
                 <dd class="p-top-about-block__dd">
                     立体的なパッドタイプの緩衝材は緩衝性能が高く、<br>機械類などの重量物や突起のある製品に最適です。
                 </dd>
@@ -65,7 +67,9 @@ var domain = 'http://www.pacwell.co.jp/';
         </div>
         <div class="p-top-about-block">
             <dl class="p-top-about-block__dl">
-                <dt class="p-top-about-block__dt"><img src="<%- d.path %>images/brand-type02.svg" alt="X-FillTMA" width="214" height="44"></dt>
+                <dt class="p-top-about-block__dt">
+                    <svg aria-label="X-FillTMA" width="214" height="44"><use xlink:href="#svg-brand-type02" /></svg>
+                </dt>
                 <dd class="p-top-about-block__dd">
                     クラフト紙をクッション性のある紙緩衝材に加工。<br>梱包作業に欠かせない隙間埋めに最適です。
                 </dd>
@@ -82,90 +86,350 @@ var domain = 'http://www.pacwell.co.jp/';
             <svg class="p-download-button__icon" aria-label="ダウンロード" width="48" height="48" role="img"><use xlink:href="#svg-download" /></svg>
         </a>
     </div>
+    <section class="p-point">
+        <h2 class="p-point-title">
+            <span class="p-point-title__text">ＮＵＥＶＯＰＡＫはここが違う！</span>
+        </h2>
+        <div class="p-point-content">
+            <ul class="p-point-content__list">
+                <li class="p-point-content__item">パッド型「X-Pad+」と三次元クッション型「X-Fill」の２シリーズ</li>
+                <li class="p-point-content__item">業界最小クラスの設置面積、最軽量のコンパクト設計です</li>
+                <li class="p-point-content__item">ハイスピードで立体的な紙緩衝材を即座に生産できます</li>
+                <li class="p-point-content__item">床置きスタンドのほか、設置場所に応じたモデルをご用意</li>
+            </ul>
+        </div>
+    </section>
+    <section class="p-case">
+        <div class="p-case-head">
+            <h2 class="p-case-head__title">お客様の声</h2>
+            <p class="p-case-head__text">
+                実際にNUEVOPAKをご使用いただいている<br>
+                お客様の声をいただきました。
+            </p>
+        </div>
+        <div class="p-case-body">
+            <article class="p-case-article">
+                <div class="p-case-article-head">
+                    <div class="p-case-article-head__container">
+                        <h3 class="p-case-article-head__name">トラスコ中山株式会社<span class="p-case-article-head__honor">様</span></h3>
+                        <div class="p-case-article-head__detail">
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
+                                <dd class="p-case-article-haed__dd">
+                                    プロツール（工場用副資材)の卸売及び自社ブランド製品の企画開発
+                                </dd>
+                            </dl>
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
+                                <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
+                                    X-Fill A
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-case-article-body">
+                    <div class="p-case-article-content">
+                        <div class="p-case-article-detail">
+                            <h4 class="p-case-article-detail__headline">
+                                NUEVOPAKを採用したポイントは？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                            当社は「日本のモノづくり現場を支えるプロツールの専門商社」として、独自の供給体制を構築してきました。2018年からは「日本最大の工具箱」を目指す当社最大の物流センター「プラネット埼玉」を稼働させています。以前は他社製の紙緩衝材を使っていたのですが、よく紙詰まりを起こすので対応に手間取っていました。また緩衝材の紙質が固く、すぐに広がってしまうので梱包工程システムのセンサーで引っかかってしまうトラブルもあり、対策を検討していたところ、タイミング良く、パックウェルの担当者から熱心にご提案いただいたので導入を決めました。
+                            </p>
+                            <hr class="p-case-article-detail__divider">
+                            <h4 class="p-case-article-detail__headline">
+                                どのような点が気に入っていますか？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                プラネット埼玉には最大5万件の出荷能力がありますが、緩衝材のトラブルによって業務効率が落ちては本末転倒です。ＮＵＥＶＯＰＡＫの導入後は、紙詰まりも減って後工程の梱包システム上の悪影響がほとんどなくなり、助かっています。それと、以前の製造機では繰り出し長さをツマミで調整するので感覚的な部分があったのですが、ＮＵＥＶＯＰＡＫはデジタルで正確に設定できる点も気に入っています。
+                            </p>
+                            <p class="p-case-article-detail__author">（プラネット埼玉　小林真梨子様）</p>
+                        </div>
+                        <ul class="p-case-article-gallery">
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case01-1.jpg');"
+                                    role="img"
+                                    aria-label="トラスコ中山株式会社様 事例画像1">
+                                </div>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image p-case-article-gallery__image--small"
+                                    style="background-image: url('<%- d.path %>images/case01-2.jpg');"
+                                    role="img"
+                                    aria-label="トラスコ中山株式会社様 事例画像2">
+                                </div>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case01-3.jpg');"
+                                    role="img"
+                                    aria-label="トラスコ中山株式会社様 事例画像3">
+                                </div>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image p-case-article-gallery__image--small"
+                                    style="background-image: url('<%- d.path %>images/case01-4.jpg');"
+                                    role="img"
+                                    aria-label="トラスコ中山株式会社様 事例画像4">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-case-article-banner">
+                        <%- include('../include/parts/_p-common-banner') %>
+                    </div>        
+                </div>
+            </article>
+            <article class="p-case-article">
+                <div class="p-case-article-head">
+                    <div class="p-case-article-head__container">
+                        <h3 class="p-case-article-head__name">株式会社トラスト<span class="p-case-article-head__honor">様</span></h3>
+                        <div class="p-case-article-head__detail">
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
+                                <dd class="p-case-article-haed__dd">
+                                    自動車用高性能部品の製造・販売
+                                </dd>
+                            </dl>
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
+                                <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
+                                    X-Pad＋
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-case-article-body">
+                    <div class="p-case-article-content">
+                        <div class="p-case-article-detail">
+                            <h4 class="p-case-article-detail__headline">
+                                NUEVOPAKの用途を教えてください
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                当社は車種別のチューンナップ部品など、自動車用のパーツを製造・販売しており、中にはタービンや鋳物など重量のある製品もたくさんあります。製品全般の梱包に使っていますが、特に重量のある製品は箱の中で動いてしまわないように隙間なく紙緩衝材を詰めています。
+                            </p>
+                            <hr class="p-case-article-detail__divider">
+                            <h4 class="p-case-article-detail__headline">
+                                採用した理由と、気に入っている点は？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                パックウェルの担当者の熱意に感心しました(笑)。スピードを追求している会社なので実際に機械を動かしてみて、そのスピードは魅力的でしたね。しかもコンパクトですし。紙にミシン目が入っていて手でカットできる点、表示が日本語でわかりやすいところも気に入っています。
+                            </p>
+                            <p class="p-case-article-detail__author">（業務部　奥田延之様）</p>
+                        </div>
+                        <ul class="p-case-article-gallery">
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case02-1.jpg');"
+                                    role="img"
+                                    aria-label="株式会社トラスト様 事例画像1">
+                                </div>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case02-2.jpg');"
+                                    role="img"
+                                    aria-label="株式会社トラスト様 事例画像2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-case-article-banner">
+                        <%- include('../include/parts/_p-common-banner') %>
+                    </div>        
+                </div>
+            </article>
+            <article class="p-case-article">
+                <div class="p-case-article-head">
+                    <div class="p-case-article-head__container">
+                        <h3 class="p-case-article-head__name">ジーエルサイエンス株式会社<span class="p-case-article-head__honor">様</span></h3>
+                        <div class="p-case-article-head__detail">
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
+                                <dd class="p-case-article-haed__dd">
+                                    クロマトグラフなど分析機器の製造・販売
+                                </dd>
+                            </dl>
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
+                                <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
+                                    X-Pad＋
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-case-article-body">
+                    <div class="p-case-article-content">
+                        <div class="p-case-article-detail">
+                            <h4 class="p-case-article-detail__headline">
+                                NUEVOPAK導入のきっかけを教えてください
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                成分分析に使うクロマトグラフ機器本体や部品の出荷時に使用しています。以前はシュレッダーにかけた紙をビニール袋に詰めて緩衝材として使っていました。しかしそのシュレッダーが故障してしまい、紙の緩衝材を探していたところ、営業の方が迅速に対応してくれました。
+                            </p>
+                            <hr class="p-case-article-detail__divider">
+                            <h4 class="p-case-article-detail__headline">
+                                導入して、どんな点が良かったですか？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                始業時に、その日に必要な分をセットすれば自動で緩衝材を作製してくれるので、作りだめができます。操作も簡単だし袋詰めする作業がなくなったので、その分の人件費は10分の１に削減できました。精密機器ですので、シュレッダーダストの紙粉を気にしなくてよくなったことも助かっています。
+                            </p>
+                            <p class="p-case-article-detail__author">（武蔵管理部　佐藤明信様）</p>
+                        </div>
+                        <ul class="p-case-article-gallery">
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image p-case-article-gallery__image--medium"
+                                    style="background-image: url('<%- d.path %>images/case03-1.jpg');"
+                                    role="img"
+                                    aria-label="ジーエルサイエンス株式会社様 事例画像1">
+                                </div>
+                                <p class="p-case-article-gallery__text">以前使用していた緩衝材</p>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case03-2.jpg');"
+                                    role="img"
+                                    aria-label="ジーエルサイエンス株式会社 事例画像2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-case-article-banner">
+                        <%- include('../include/parts/_p-common-banner') %>
+                    </div>        
+                </div>
+            </article>
+            <article class="p-case-article">
+                <div class="p-case-article-head">
+                    <div class="p-case-article-head__container">
+                        <h3 class="p-case-article-head__name">株式会社ハイメックス<span class="p-case-article-head__honor">様</span></h3>
+                        <div class="p-case-article-head__detail">
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
+                                <dd class="p-case-article-haed__dd">
+                                    コンバーティング機器の開発・製造
+                                </dd>
+                            </dl>
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
+                                <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
+                                    X-Pad＋
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-case-article-body">
+                    <div class="p-case-article-content">
+                        <div class="p-case-article-detail">
+                            <h4 class="p-case-article-detail__headline">
+                                従来はどんなお困りごとがありましたか？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                当社の製品は素材がアルミやカーボン、樹脂などさまざまで重量物が多く、価格的にも数万円～数十万円と安いものではないので、梱包には非常に気を遣います。以前はマユ玉の緩衝材を使っていましたが、輸送時につぶれてしまって製品が動き、輸送事故になってしまったこともありました。
+                            </p>
+                            <hr class="p-case-article-detail__divider">
+                            <h4 class="p-case-article-detail__headline">
+                                導入の決め手となった点は？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                トライアルで設置してみたところ、作業者がトライアル期間中に操作法を覚えてしまうくらい使いやすかったこと。しかもマユ玉緩衝材より大きいスペースを、より低コストで埋めてくれる。大きい製品の梱包でも、繰り出す長さを簡単に調節できて便利だし、資材もコンパクト。環境に配慮という点でもイメージアップになります。
+                            </p>
+                            <p class="p-case-article-detail__author">（製造部　和泉友祐様）</p>
+                        </div>
+                        <ul class="p-case-article-gallery">
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case03-1.jpg');"
+                                    role="img"
+                                    aria-label="株式会社ハイメックス様 事例画像1">
+                                </div>
+
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case03-2.jpg');"
+                                    role="img"
+                                    aria-label="株式会社ハイメックス様 事例画像2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-case-article-banner">
+                        <%- include('../include/parts/_p-common-banner') %>
+                    </div>        
+                </div>
+            </article>
+            <article class="p-case-article">
+                <div class="p-case-article-head">
+                    <div class="p-case-article-head__container">
+                        <h3 class="p-case-article-head__name">旭産業株式会社<span class="p-case-article-head__honor">様</span></h3>
+                        <div class="p-case-article-head__detail">
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
+                                <dd class="p-case-article-haed__dd">
+                                    配管ダクトなどの外装材専門メーカー
+                                </dd>
+                            </dl>
+                            <dl class="p-case-article-head__dl">
+                                <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
+                                <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
+                                    X-Pad＋
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-case-article-body">
+                    <div class="p-case-article-content">
+                        <div class="p-case-article-detail">
+                            <h4 class="p-case-article-detail__headline">
+                                NUEVOPAK導入に至った動機は？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                当社では空調などに使われる配管ダクトの外装材を製造しています。出荷は１日に250箱～400箱くらいあり、数kgから重いものでは50kgの製品もあります。以前は、ロール紙タイプのボーガスペーパーで梱包に手間取っていたので、緩衝材製造機を導入してラインを組むことにしました。
+                            </p>
+                            <hr class="p-case-article-detail__divider">
+                            <h4 class="p-case-article-detail__headline">
+                                導入にあたって、良かった点は？
+                            </h4>
+                            <p class="p-case-article-detail__text">
+                                パックウェルの担当者の対応が良く、トライアル設置やレンタルの条件などいろいろ相談に乗ってもらいました。セッティングも操作も簡単で女性にも使いやすく、むしろ使い過ぎに注意しています(笑)。カット＆ホールド機能で作業効率が上がり、２名が担当していた現場を１名で対応できるようになりました。
+                            </p>
+                            <p class="p-case-article-detail__author">（製造部　苅場達也様）</p>
+                        </div>
+                        <ul class="p-case-article-gallery">
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case04-1.jpg');"
+                                    role="img"
+                                    aria-label="旭産業株式会社様 事例画像1">
+                                </div>
+                            </li>
+                            <li class="p-case-article-gallery__item">
+                                <div class="p-case-article-gallery__image"
+                                    style="background-image: url('<%- d.path %>images/case04-2.jpg');"
+                                    role="img"
+                                    aria-label="旭産業株式会社様 事例画像2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-case-article-banner">
+                        <%- include('../include/parts/_p-common-banner') %>
+                    </div>        
+                </div>
+            </article>
+        </div>
+    </section>
 </section>
 
 
 
 
-<div class="p-large-banner">
-    <p class="p-large-banner__lead">導入前にその魅力をお確かめいただけます！</p>
-    <div class="p-large-banner__content">
-        <div class="p-large-banner__catch">無償デモ＆<br>無料サンプル</div>
-        <div class="p-large-banner__circle">実施中！</div>
-    </div>
-    <a href="http://www.pacwell.co.jp/contact.html" class="p-large-banner__link">
-        お問い合わせ・無償デモのお申し込みは今すぐ！
-        <svg class="p-large-banner__icon" aria-label="お問い合わせ" width="40" height="40" role="img"><use xlink:href="#svg-mail-large" /></svg>
-    </a>
-</div>
 
 
-
-
-<article class="p-case-article">
-    <div class="p-case-article-head">
-        <div class="p-case-article-head__container">
-            <h3 class="p-case-article-head__name">トラスコ中山株式会社<span class="p-case-article-head__honor">様</span></h3>
-            <div class="p-case-article-head__detail">
-                <dl class="p-case-article-head__dl">
-                    <dt class="p-case-article-haed__dt c-tag">事業内容</dt>
-                    <dd class="p-case-article-haed__dd">
-                        プロツール（工場用副資材)の卸売及び自社ブランド製品の企画開発
-                    </dd>
-                </dl>
-                <dl class="p-case-article-head__dl">
-                    <dt class="p-case-article-haed__dt c-tag">導入機種</dt>
-                    <dd class="p-case-article-haed__dd p-case-article-haed__dd--brand">
-                        X-Fill A
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <div class="p-case-article-body">
-        <div class="p-case-article-content">
-            <div class="p-case-article-detail">
-                <h4 class="p-case-article-detail__headline">
-                    NUEVOPAKを採用したポイントは？
-                </h4>
-                <p class="p-case-article-detail__text">
-                当社は「日本のモノづくり現場を支えるプロツールの専門商社」として、独自の供給体制を構築してきました。2018年からは「日本最大の工具箱」を目指す当社最大の物流センター「プラネット埼玉」を稼働させています。以前は他社製の紙緩衝材を使っていたのですが、よく紙詰まりを起こすので対応に手間取っていました。また緩衝材の紙質が固く、すぐに広がってしまうので梱包工程システムのセンサーで引っかかってしまうトラブルもあり、対策を検討していたところ、タイミング良く、パックウェルの担当者から熱心にご提案いただいたので導入を決めました。
-                </p>
-                <hr class="p-case-article-detail__divider">
-                <h4 class="p-case-article-detail__headline">
-                    どのような点が気に入っていますか？
-                </h4>
-                <p class="p-case-article-detail__text">
-                    プラネット埼玉には最大5万件の出荷能力がありますが、緩衝材のトラブルによって業務効率が落ちては本末転倒です。ＮＵＥＶＯＰＡＫの導入後は、紙詰まりも減って後工程の梱包システム上の悪影響がほとんどなくなり、助かっています。それと、以前の製造機では繰り出し長さをツマミで調整するので感覚的な部分があったのですが、ＮＵＥＶＯＰＡＫはデジタルで正確に設定できる点も気に入っています。
-                </p>
-                <p class="p-case-article-detail__author">（プラネット埼玉　小林真梨子様）</p>
-            </div>
-            <ul class="p-case-article-gallery">
-                <li class="p-case-article-gallery__item">
-                    <img src="<%- d.path %>images/case01-1.jpg" alt="">
-                </li>
-                <li class="p-case-article-gallery__item">
-                    <img src="<%- d.path %>images/case01-2.jpg" alt="">
-                </li>
-                <li class="p-case-article-gallery__item">
-                    <img src="<%- d.path %>images/case01-3.jpg" alt="">
-                </li>
-                <li class="p-case-article-gallery__item">
-                    <img src="<%- d.path %>images/case01-4.jpg" alt="">
-                </li>
-            </ul>
-        </div>
-        <div class="p-case-article-banner">
-            <a href="http://www.pacwell.co.jp/contact.html" class="p-common-banner">
-                <div class="p-common-banner__lead">
-                    お問い合わせ・無償デモのお申し込みは今すぐ！
-                    <svg class="p-common-banner__icon" aria-label="お問い合わせ" width="40" height="40" role="img"><use xlink:href="#svg-mail" /></svg>
-                </div>
-                <div class="p-common-banner__content">
-                    <span class="p-common-banner__text">お電話でのお問い合わせ</span>
-                    <strong class="p-common-banner__strong">TEL:048-711-3789</strong>
-                </div>
-            </a>
-        </div>        
-    </div>
-</article>
