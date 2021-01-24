@@ -1,7 +1,7 @@
 <% var d = jsonData; -%>
 <section class="l-wrapper">
     <div class="p-kv">
-        <h1 class="p-kv__title"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機" width="887" height="231"></h1>
+        <h1 class="p-kv__title" onclick="ga('send', 'event', 'click', 'lp_link-01_headerLogo');"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機" width="887" height="231"></h1>
     </div>
     <section class="p-top-main">
         <h2 class="p-top-main__title">お困りごとはありませんか？</h2>
@@ -43,7 +43,7 @@
                 さまざまな紙緩衝材を即座に製造するＮＵＥＶＯＰＡＫは、時代のニーズに応えます。
             </p>
             <div class="p-top-product-type">
-                <%- include('../include/parts/_p-product-type') %>
+                <%- include('../include/parts/_p-product-type', {firstClickEvent: 'lp_link-02_product2-pro_8', secondClickEvent: 'lp_link-03_product2-pro_6'}); %>
             </div>
         </section>
     </section>
@@ -77,8 +77,8 @@
         </div>
     </section>
     <div class="p-top-banner">
-        <%- include('../include/parts/_p-large-banner') %>
-        <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button">
+        <%- include('../include/parts/_p-large-banner', {clickEvent: 'lp_link-04_contact01'}); %>
+        <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button" class="p-product-type__link" onclick="ga('send', 'event', 'click', 'lp_link-05_catalog');">
             カタログはこちらからダウンロードできます
             <svg class="p-download-button__icon" aria-label="ダウンロード" width="48" height="48" role="img"><use xlink:href="#svg-download" /></svg>
         </a>
@@ -175,7 +175,7 @@
                         </ul>
                     </div>
                     <div class="p-case-article-banner">
-                        <%- include('../include/parts/_p-common-banner') %>
+                        <%- include('../include/parts/_p-common-banner', {clickEvent: 'lp_link-06_contact02'}); %>
                     </div>        
                 </div>
             </article>
@@ -235,7 +235,7 @@
                         </ul>
                     </div>
                     <div class="p-case-article-banner">
-                        <%- include('../include/parts/_p-common-banner') %>
+                        <%- include('../include/parts/_p-common-banner' , {clickEvent: 'lp_link-07_contact03'}); %>
                     </div>        
                 </div>
             </article>
@@ -296,7 +296,7 @@
                         </ul>
                     </div>
                     <div class="p-case-article-banner">
-                        <%- include('../include/parts/_p-common-banner') %>
+                        <%- include('../include/parts/_p-common-banner' , {clickEvent: 'lp_link-08_contact04'}); %>
                     </div>        
                 </div>
             </article>
@@ -357,7 +357,7 @@
                         </ul>
                     </div>
                     <div class="p-case-article-banner">
-                        <%- include('../include/parts/_p-common-banner') %>
+                        <%- include('../include/parts/_p-common-banner', {clickEvent: 'lp_link-09_contact05'}) %>
                     </div>        
                 </div>
             </article>
@@ -417,7 +417,7 @@
                         </ul>
                     </div>
                     <div class="p-case-article-banner">
-                        <%- include('../include/parts/_p-common-banner') %>
+                        <%- include('../include/parts/_p-common-banner', {clickEvent: 'lp_link-10_contact06'}); %>
                     </div>        
                 </div>
             </article>
@@ -449,7 +449,7 @@
             </ul>
         </div>
         <div class="p-other-banner">
-            <%- include('../include/parts/_p-common-banner') %>
+            <%- include('../include/parts/_p-common-banner', {clickEvent: 'lp_link-11_contact07'}); %>
         </div>
     </section>
     <section class="p-faq">
@@ -477,10 +477,10 @@
         </div>
     </section>
     <div class="p-bottom-product-type">
-        <%- include('../include/parts/_p-product-type') %>
+        <%- include('../include/parts/_p-product-type', {firstClickEvent: 'lp_link-12_product2-pro_8', secondClickEvent: ' lp_link-13_product2-pro_6'}); %>
     </div>
     <div class="p-bottom-banner">
-        <%- include('../include/parts/_p-large-banner') %>
+        <%- include('../include/parts/_p-large-banner', {clickEvent: 'lp_link-14_contact07'}); %>
     </div>
 </section>
 

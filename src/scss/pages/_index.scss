@@ -2,7 +2,7 @@
 
 .p-kv {
     align-items: center;
-    background: url(#{$IMG_PATH}kv01.jpg) center top no-repeat;
+    background: url(#{$IMG_PATH}kv01.jpg) center no-repeat;
     background-size: cover;
     display: flex;
     height: 350px;
@@ -101,7 +101,7 @@
 }
 
 .p-top-introduction-kv__image {
-    background: url(#{$IMG_PATH}kv02.jpg) center top no-repeat;
+    background: url(#{$IMG_PATH}kv02.jpg) center no-repeat;
     background-size: cover;
     flex: 1;
     height: 420px;

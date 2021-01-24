@@ -20,7 +20,8 @@
             </li>
         </ul>
         <p class="p-product-type__bottom">
-            <a href="<%- d.domain %>product/product2.html#pro_8" class="p-product-type__link">製品について詳しくはこちら</a>
+            <a href="<%- d.domain %>product/product2.html#pro_8" class="p-product-type__link" onclick="ga('send', 'event', 'click', '<%- firstClickEvent %>');">製品について詳しくはこちら</a>
+            <p></p>
         </p>
     </div>
     <div class="p-product-type__article">
@@ -43,7 +44,7 @@
             </li>
         </ul>
         <p class="p-product-type__bottom">
-            <a href="<%- d.domain %>product/product2.html#pro_6" class="p-product-type__link">製品について詳しくはこちら</a>
+            <a href="<%- d.domain %>product/product2.html#pro_6" class="p-product-type__link" onclick="ga('send', 'event', 'click', '<%- secondClickEvent %>');">製品について詳しくはこちら</a>
         </p>
     </div>
 </div>
