@@ -265,6 +265,7 @@
 
 .p-case {
     background: $base-gray-background;
+    padding: 0 0 68px;
 }
 
 .p-case-head {
@@ -293,4 +294,161 @@
 
 .p-case-body {
     margin: 22px 0 0;
+}
+
+.p-other {
+    // margin: 60px 0 0;
+}
+
+.p-other-title {
+    background: $base-yellow;
+    font-size: 26px;
+    font-weight: normal;
+    padding: 4px 10px;
+    text-align: center;
+}
+
+.p-other-content {
+    color: $base-blue;
+    margin: 38px auto 0;
+    max-width: 660px;
+    padding: 0 10px;
+}
+
+.p-other-content__text {
+    border-bottom: 1px solid $base-yellow;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 0 5px;
+    text-align: center;
+}
+
+.p-other-content__catch {
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 28px 0 0;
+    text-align: center;
+}
+
+.p-other-content__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+    padding: 0 8px 0 0;
+}
+
+.p-other-content__item {
+    text-align: center;
+}
+
+.p-other-content__type {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.p-other-content__en {
+    font-size: 2.22em;
+}
+
+.p-other-content__image {
+    margin: 5px 0 0;
+}
+
+.p-other-banner {
+    padding: 40px 10px 0;
+}
+
+.p-faq {
+    background: $base-gray-background;
+    margin: 62px 0 0;
+}
+
+.p-faq-head {
+    background: $base-yellow;
+    color: $base-blue;
+    padding: 10px;
+}
+
+.p-faq-head__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $pc-max-width;
+    line-height: 1;
+    padding: 0 0 0 72px;
+}
+
+.p-faq-head__title {
+    font-size: 50px;
+}
+
+.p-faq-head__and {
+    font-size: 35px;
+}
+
+.p-faq-head__ja {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.p-faq-body {
+    padding: 16px 10px 21px;
+}
+
+.p-faq-body__list {
+    max-width: $pc-max-width;
+    margin: 0 auto;
+
+}
+
+.p-faq-body__item {
+    padding: 30px 0 30px 68px;
+
+    & + & {
+        border-top: 1px solid $base-white;
+    }
+}
+
+.p-faq-body__text {
+    align-items: center;
+    display: flex;
+    font-size: 26px;
+
+    &::before {
+        align-items: center;
+        background: $base-blue;
+        border-radius: 50%;
+        color: $base-white-taxt-color;
+        content: "Q";
+        display: flex;
+        flex-basis: 70px;
+        font-size: 45px;
+        font-weight: bold;
+        height: 70px;
+        justify-content: center;
+        margin: 0 20px 0 0;
+        width: 70px;
+    }
+
+    &--a {
+        font-weight: bold;
+        margin: 14px 0 0;
+        &::before {
+            background: $base-yellow;
+            color: $base-blue;
+            content: "A";
+        }
+    }
+}
+
+.p-bottom-product-type {
+    margin: 66px auto 0;
+    max-width: calc(#{$pc-max-width} + 20px);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.p-bottom-banner {
+    margin: 61px 0 0;
 }

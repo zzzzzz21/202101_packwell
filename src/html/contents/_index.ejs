@@ -1,7 +1,4 @@
-<% 
-var d = jsonData;
-var domain = 'http://www.pacwell.co.jp/';
--%>
+<% var d = jsonData; -%>
 <section class="l-wrapper">
     <div class="p-kv">
         <h1 class="p-kv__title"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機"></h1>
@@ -426,6 +423,65 @@ var domain = 'http://www.pacwell.co.jp/';
             </article>
         </div>
     </section>
+    <section class="p-other">
+        <h2 class="p-other-title">その他のNUEVOPAK機種</h2>
+        <div class="p-other-content">
+            <p class="p-other-content__text">紙緩衝材手動製造機</p>
+            <p class="p-other-content__catch">
+                <svg aria-label="X-FillTMMタイプ" width="228" height="37" role="img"><use xlink:href="#svg-brand-type03" /></svg><br>
+                軽量物などの隙間埋め用
+            </p>
+            <ul class="p-other-content__list">
+                <li class="p-other-content__item">
+                    <p class="p-other-content__type"><strong class="p-other-content__en">MM</strong>タイプ</p>
+                    <p class="p-other-content__model">手動繰出し・可動モデル</p>
+                    <div class="p-other-content__image">
+                        <img src="<%- d.path %>images/model03-1.jpg" width="356" height="245" alt="MMタイプ 手動繰出し・可動モデル">
+                    </div>
+                </li>
+                <li class="p-other-content__item">
+                    <p class="p-other-content__type"><strong class="p-other-content__en">MT</strong>タイプ</p>
+                    <p class="p-other-content__model">手動繰出し・卓上モデル</p>
+                    <div class="p-other-content__image">
+                        <img src="<%- d.path %>images/model03-2.jpg" width="200" height="245" alt="手動繰出し・卓上モデル">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="p-other-banner">
+            <%- include('../include/parts/_p-common-banner') %>
+        </div>
+    </section>
+    <section class="p-faq">
+        <div class="p-faq-head">
+            <div class="p-faq-head__wrapper">
+                <h2 class="p-faq-head__title">Q<span class="p-faq-head__and">&</span>A</h2>
+                <span class="p-faq-head__ja">よくあるご質問</span>
+            </div>
+        </div>
+        <div class="p-faq-body">
+            <ul class="p-faq-body__list">
+                <li class="p-faq-body__item">
+                    <p class="p-faq-body__text">機械は購入だけですか？</p>
+                    <p class="p-faq-body__text p-faq-body__text--a">購入・レンタル・リースでご対応が可能です。</p>
+                </li>
+                <li class="p-faq-body__item">
+                    <p class="p-faq-body__text">環境認証は取得していますか？</p>
+                    <p class="p-faq-body__text p-faq-body__text--a">FSC認証を取得しております。</p>
+                </li>
+                <li class="p-faq-body__item">
+                    <p class="p-faq-body__text">故障時の対応について教えてください。</p>
+                    <p class="p-faq-body__text p-faq-body__text--a">ヘルプデスクが即日対応いたします。</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="p-bottom-product-type">
+        <%- include('../include/parts/_p-product-type') %>
+    </div>
+    <div class="p-bottom-banner">
+        <%- include('../include/parts/_p-large-banner') %>
+    </div>
 </section>
 
 
