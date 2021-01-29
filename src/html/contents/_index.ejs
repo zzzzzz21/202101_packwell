@@ -2,7 +2,7 @@
 <% var d = jsonData; -%>
 <section class="l-wrapper">
     <div class="p-kv">
-        <h1 class="p-kv__title" onclick="ga('send', 'event', 'click', 'lp_link-01_headerLogo');"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機" width="887" height="231"></h1>
+        <h1 class="p-kv__title"><img src="<%- d.path %>images/headline01.svg" alt="梱包も脱プラスチックの時代！進化した「紙緩衝材」製造機" width="887" height="231"></h1>
     </div>
     <section class="p-top-main">
         <h2 class="p-top-main__title">お困りごとはありませんか？</h2>
@@ -79,7 +79,7 @@
     </section>
     <div class="p-top-banner">
         <%- include('../include/parts/_p-large-banner', {clickEvent: 'lp_link-04_contact'}); %>
-        <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button" class="p-product-type__link" onclick="ga('send', 'event', 'click', 'lp_link-05_catalog');">
+        <a href="http://www.pacwell.co.jp/product/catalog.html" class="p-download-button" class="p-product-type__link" onclick="ga('send', 'event', 'click', 'lp_link-05_catalog');" target="_blank">
             カタログはこちらからダウンロードできます
             <svg class="p-download-button__icon" aria-label="ダウンロード" width="48" height="48" role="img"><use xlink:href="#svg-download" /></svg>
         </a>
